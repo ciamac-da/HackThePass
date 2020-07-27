@@ -4,29 +4,85 @@
     <meta charset="utf-8">
     <title>HackApp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    
+    <a href="https://icons8.com/icon/120395/step-into"></a>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="app">
-      <div class="panel panel-default ausgabe-panel">
+      <div 
+      class="panel panel-default ausgabe-panel"
+      style="margin-bottom: 0px;"
+      >
         <div class="unsichtbar"></div>
         <div class="panel-body ausgabe"
+      style="padding: 0px;"
+
         >
         <center
-        style="background-color: green"
+        style="
+        background-color: green;
+        font-family: 'Recursive', sans-serif;
+        "
           >
             Hack the Planet!
           </center>
+            </div>
+      </div>
+     
+      <div
+      style="display: flex;
+      justify-content: center;
+      background-color: rgb(20, 114, 20);
+      "
+      >
+          <div class="card">
+            <img
+
+            src="./hackteplanet.JPG" 
+            class="card-img-top" 
+            alt="..."
+            style="width: 300px;
+            height: 320px;"
+            >
+            <div class="card-body">
+                <div
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                >
+
+                    <div class="input-group eingabe-gruppe">
+                        <input 
+                        type="text" 
+                        class="form-control probiere" 
+                        placeholder="Write something Yo...! :)"
+                        font-family: 'Recursive', sans-serif;       
+                        >
+                    </div>
+                    <span class="input-group-btn">
+                        <button 
+                        class="btn btn hack"  
+                        type="button"
+                        style="
+                        color: black;
+                        font-weight: bolder;
+                        background-color: red;
+                        font-family: 'Recursive', sans-serif;
+                        "
+                        >
+                            Find the Password Cia:)
+                            <img src="https://img.icons8.com/material-outlined/25/000000/step-into.png"/>
+                        </button>
+                        <button 
+                        type="button" class="btn btn-success"
+                        id="demo">  
+                    </button>
+                </span>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="input-group eingabe-gruppe">
-        <input type="text" class="form-control probiere" placeholder="Write your Pass Yo...!">
-        <span class="input-group-btn">
-          <Button class="btn btn-outline-success hack"  type="button">Hack yourself Cia:)</Button>
-        </span>
-        <button id="demo">  </button>
-      </div>
     </div>
+</div>
   </body>
   <link rel="stylesheet" href="/styles.css">
   <script src="script.js" charset="utf-8"></script>
