@@ -44,12 +44,13 @@ hack.onclick = async () => {
                             zeichenF = alphabet[f]
                             passwortHack = zeichenA + zeichenB + zeichenC + zeichenD + zeichenE + zeichenF
 
-
+                           // Lets fetch our datas from server
                             let data = await fetchJSON(
                                 '/login', {
                                     pass: passwortHack
                                 });
-
+                                
+                                // If password is founded then return me show me Hacked as alert!
                             if (data.status === 'success') {
                                 alert('Hacked')
                                 return

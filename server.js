@@ -6,7 +6,7 @@ a.use(e.static('.'));
 a.use(p.json());
 
 
-
+// Let the password be empty
 let passwort = '';
 for (let i = 0; i < 6; i++) {
     let zeichen;
@@ -16,6 +16,7 @@ for (let i = 0; i < 6; i++) {
     passwort += zeichen;
 }
 console.log('passwort: ' + passwort);
+
 
 a.post("/login", (req, res) => {
     let {
@@ -32,5 +33,5 @@ a.post("/login", (req, res) => {
     }
 });
 
-
+// to set port number!
 a.listen(9922, e => console.log('server bereit auf port ' + 9922));
