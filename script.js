@@ -49,6 +49,7 @@ hack.onclick = async () => {
                                 '/login', {
                                     pass: passwortHack
                                 });
+                           
                                 
                                 // If password is founded then return me show me Hacked as alert!
                             if (data.status === 'success') {
