@@ -1,9 +1,10 @@
-const e = require('express')
-const a = e()
-const p = require('body-parser')
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
 
-a.use(e.static('.'));
-a.use(p.json());
+
+app.use(express.static('.'));
+app.use(bodyParser.json());
 
 
 // Let the password be empty
@@ -18,7 +19,7 @@ for (let i = 0; i < 6; i++) {
 console.log('passwort: ' + passwort);
 
 
-a.post("/login", (req, res) => {
+app.post("/login", (req, res) => {
     let {
         pass
     } = req.body;
@@ -34,4 +35,4 @@ a.post("/login", (req, res) => {
 });
 
 // to set port number!
-a.listen(9922, e => console.log('server bereit auf port ' + 9922));
+app.listen(9922, e => console.log('server bereit auf port ' + 9922));

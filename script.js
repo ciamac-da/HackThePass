@@ -2,6 +2,7 @@ const probiere = document.querySelector('.probiere');
 const ausgabe = document.querySelector('.ausgabe');
 const hack = document.querySelector('.hack');
 
+
 const fetchJSON = async (query, body) => {
     let response = await fetch(
         'http://localhost:9922' + query, {
